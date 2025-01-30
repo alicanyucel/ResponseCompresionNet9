@@ -39,7 +39,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 app.UseResponseCompression();
-app.MapGet("/GetAll", () =>
+app.MapGet("api/GetAll", () =>
 {
     List<int> numbers = new();
     for(int i = 0; i <= 100; i++)
